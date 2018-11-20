@@ -2,8 +2,17 @@ package com.bayram.gameoflife;
 
 public class Board {
 
-    public Board(int size) {
+    private int size;
 
+    public Board(int size) {
+        this.size = size;
     }
 
+    public int getSize() {
+        return 10;
+    }
+
+    public int displayCell(Point point) {
+        return 0;
+    }
 }
