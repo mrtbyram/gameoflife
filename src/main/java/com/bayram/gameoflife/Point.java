@@ -13,4 +13,12 @@ public class Point {
     public static Point xy(int x, int y) {
         return new Point(x, y);
     }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 }
