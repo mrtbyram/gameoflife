@@ -26,4 +26,15 @@ public class GameTest {
         assertTrue(game.isCellAlive(4, 4));
         assertFalse(game.isCellAlive(3, 3));
     }
+
+    @Test
+    public void should_deactivate_cell(){
+        Game game = new Game();
+
+        game.activate(3, 3);
+        game.deactivate(3, 3);
+
+        assertFalse(game.isCellAlive(3, 3));
+    }
+    
 }

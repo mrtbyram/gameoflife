@@ -11,4 +11,8 @@ public class Game {
     public void activate(int x, int y) {
         cells[x][y] = 1;
     }
+
+    public void deactivate(int x, int y) {
+        cells[x][y] = 0;
+    }
 }
