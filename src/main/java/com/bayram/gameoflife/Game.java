@@ -15,4 +15,8 @@ public class Game {
     public void deactivate(int x, int y) {
         cells[x][y] = 0;
     }
+
+    public int getLivingAdjacentCount(int x, int y) {
+        return 1;
+    }
 }

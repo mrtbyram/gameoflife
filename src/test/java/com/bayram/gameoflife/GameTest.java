@@ -36,5 +36,14 @@ public class GameTest {
 
         assertFalse(game.isCellAlive(3, 3));
     }
-    
+
+    @Test
+    public void should_give_living_adjacent_count(){
+        Game game = new Game();
+
+        game.activate(3, 3);
+        int livingAdjacentCount = game.getLivingAdjacentCount(2, 3);
+
+        assertEquals(1, livingAdjacentCount);
+    }
 }
