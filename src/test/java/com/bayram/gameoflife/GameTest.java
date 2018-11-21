@@ -1,7 +1,8 @@
 package com.bayram.gameoflife;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class GameTest {
 
@@ -11,7 +12,7 @@ public class GameTest {
 
         boolean isAlive = game.isCellAlive(3, 3);
 
-        Assert.assertFalse(isAlive);
+        assertFalse(isAlive);
     }
 
     @Test
@@ -19,7 +20,10 @@ public class GameTest {
         Game game = new Game();
 
         game.activate(2, 2);
+        game.activate(4, 4);
 
-        Assert.assertTrue(game.isCellAlive(2, 2));
+        assertTrue(game.isCellAlive(2, 2));
+        assertTrue(game.isCellAlive(4, 4));
+        assertFalse(game.isCellAlive(3, 3));
     }
 }
