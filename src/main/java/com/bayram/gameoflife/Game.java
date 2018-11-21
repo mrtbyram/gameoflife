@@ -17,6 +17,17 @@ public class Game {
     }
 
     public int getLivingAdjacentCount(int x, int y) {
-        return 1;
+        int livingAdjacentCount = 0;
+
+        livingAdjacentCount += cells[x-1][y-1];
+        livingAdjacentCount += cells[x-1][y];
+        livingAdjacentCount += cells[x-1][y+1];
+        livingAdjacentCount += cells[x][y-1];
+        livingAdjacentCount += cells[x][y+1];
+        livingAdjacentCount += cells[x+1][y-1];
+        livingAdjacentCount += cells[x+1][y];
+        livingAdjacentCount += cells[x+1][y+1];
+
+        return livingAdjacentCount;
     }
 }

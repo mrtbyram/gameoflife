@@ -45,5 +45,8 @@ public class GameTest {
         int livingAdjacentCount = game.getLivingAdjacentCount(2, 3);
 
         assertEquals(1, livingAdjacentCount);
+
+        game.activate(2, 2);
+        assertEquals(2, game.getLivingAdjacentCount(2, 3));
     }
 }
