@@ -5,6 +5,7 @@ jdk:
 
 after_success:
   - echo $TRAVIS_BRANCH
+  - ./branchworks.sh
 
 branches:
   only:
