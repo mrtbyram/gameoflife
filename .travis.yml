@@ -7,7 +7,7 @@ after_success:
   - echo $TRAVIS_BRANCH
   - pwd
   - cd /mrtbyram/gameoflife
-  - sudo ./branchworks.sh
+  - sudo branchworks.sh
 
 branches:
   only:
