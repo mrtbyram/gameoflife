@@ -7,7 +7,7 @@ after_success:
   - echo $TRAVIS_BRANCH
   - pwd
   - ls
-  - sudo branchworks.sh
+  - ./branchworks.sh
 
 branches:
   only:
