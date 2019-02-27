@@ -6,7 +6,7 @@ jdk:
 after_success:
   - echo $TRAVIS_BRANCH
   - pwd
-  - cd /mrtbyram/gameoflife
+  - ls
   - sudo branchworks.sh
 
 branches:
