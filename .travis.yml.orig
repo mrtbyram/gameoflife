@@ -5,9 +5,12 @@ jdk:
 
 after_success:
   - echo $TRAVIS_BRANCH
+<<<<<<< HEAD
+=======
   - pwd
   - ls
   - ./branchworks.sh
+>>>>>>> remotes/origin/dev
 
 branches:
   only:
