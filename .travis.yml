@@ -5,11 +5,14 @@ jdk:
 
 after_success:
   - echo $TRAVIS_BRANCH
-  - pwd
-  - ls
-  - ./branchworks.sh
-
+  
 branches:
   only:
     - dev
     - master
+
+deploy:
+  provider: script
+  script: bash branchworks.sh
+  on:
+    branch: dev
